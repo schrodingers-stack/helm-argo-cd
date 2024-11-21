@@ -1,4 +1,6 @@
 argo-cd:
   configs:
+    cm:
+      admin.enabled: "true"
     params:
       server.insecure: "true"

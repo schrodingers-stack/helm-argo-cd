@@ -1,8 +1,7 @@
 argo-cd:
   configs:
     cm:
-      admin.enabled: "true"
-      accounts.terraform: apiKey
+      admin.enabled: "false"
       resource.customizations: |
         argoproj.io/Application: # https://argo-cd.readthedocs.io/en/stable/operator-manual/health/#argocd-app
           health.lua: |
@@ -23,9 +22,6 @@ argo-cd:
             hs = {}
             hs.status = "Healthy"
             return hs
-    secret:
-      server.secretkey: $argo-cd-auth-tokens:server-secret-key
-      accounts.terraform.tokens: $argo-cd-auth-tokens:terraform-tokens
   dex:
     enabled: false
 
