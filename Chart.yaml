@@ -1,6 +1,6 @@
 apiVersion: v2
 name: Argo CD
-version: "0" # TODO Maybe add a version and update it automatically using release-please
+version: "0.0.1" # x-release-please-version
 description: Helm chart to deploy Argo CD using the Schrödinger's Stack
 home: https://schtack.cloud
 dependencies:
