@@ -1,7 +1,7 @@
-{{- if or (index .Values "argo-cd" "controller" "metrics" "serviceMonitor" "enabled") 
+{{- if and .Values.schtack.grafanaDashboards (or (index .Values "argo-cd" "controller" "metrics" "serviceMonitor" "enabled") 
           (or (index .Values "argo-cd" "repoServer" "metrics" "serviceMonitor" "enabled")
               (index .Values "argo-cd" "server" "metrics" "serviceMonitor" "enabled")
-          )
+          ))
 }}
 {{- $files := .Files.Glob "dashboards/*.json" }}
 {{- if $files }}
