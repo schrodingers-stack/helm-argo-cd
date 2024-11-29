@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.0...v0.1.1) (2024-11-29)
+
+
+### Features
+
+* enable Applications from any namespace ([f5c40ff](https://github.com/schrodingers-stack/helm-argo-cd/commit/f5c40ff8360e28315511d54f39a780e0862592f0))
+
+
+### Code Refactoring
+
+* rename the template for the Grafana charts ([f24a1dd](https://github.com/schrodingers-stack/helm-argo-cd/commit/f24a1ddbac1fa61822a8b939c8e5ef89eb65366e))
+
 ## 0.1.0 (2024-11-21)
 
 
