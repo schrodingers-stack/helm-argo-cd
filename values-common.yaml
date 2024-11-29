@@ -34,6 +34,9 @@ argo-cd:
       # Allow Argo CD to source ApplicationSet and Application resources from the cluster-apps-* namespaces.
       applicationsetcontroller.namespaces: "cluster-apps-*"
       application.namespaces: "cluster-apps-*"
+      # Disable the SCM providers to prevent secret exfiltration when using ApplicationSets in any namespace.
+      # Ref: https://argo-cd.readthedocs.io/en/stable/operator-manual/applicationset/Appset-Any-Namespace/#scm-providers-secrets-consideration
+      applicationsetcontroller.enable.scm.providers: "false"
   dex:
     enabled: false
 
