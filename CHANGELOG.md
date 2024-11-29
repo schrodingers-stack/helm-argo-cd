@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.1...v0.1.2) (2024-11-29)
+
+
+### Bug Fixes
+
+* disable the SCM generator in ApplicationSets ([12f3bf4](https://github.com/schrodingers-stack/helm-argo-cd/commit/12f3bf4c04c6b7f51ef457381039afa4c5873ff5))
+
 ## [0.1.1](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.0...v0.1.1) (2024-11-29)
 
 
