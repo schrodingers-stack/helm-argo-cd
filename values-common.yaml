@@ -1,7 +1,15 @@
+# TODO Enable NetworkPolicies and add custom ones if necessary (such as by the Traefik reverse proxy)
+# TODO Add resources definitions
+
 argo-cd:
   configs:
     cm:
+      # disable the admin user.
       admin.enabled: "false"
+      # Change the tracking method to annotation to allow sourcing Application and ApplicationSet resources from 
+      # any namespace.
+      application.resourceTrackingMethod: "annotation"
+      # Enable the health status for Application resources to allow an App of Apps pattern.
       resource.customizations: |
         argoproj.io/Application: # https://argo-cd.readthedocs.io/en/stable/operator-manual/health/#argocd-app
           health.lua: |
@@ -22,7 +30,12 @@ argo-cd:
             hs = {}
             hs.status = "Healthy"
             return hs
+    params:
+      # Allow Argo CD to source ApplicationSet and Application resources from the cluster-apps-* namespaces.
+      applicationsetcontroller.namespaces: "cluster-apps-*"
+      application.namespaces: "cluster-apps-*"
   dex:
     enabled: false
 
-# TODO Enable NetworkPolicies and add custom ones if necessary (such as by the Traefik reverse proxy)
+schtack:
+  grafanaDashboards: false
