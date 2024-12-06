@@ -16,6 +16,7 @@ items:
     name: {{ printf "%s-dashboard-%s" $.Release.Name $dashboardName | trunc 63 | trimSuffix "-" }}
     labels:
       grafana_dashboard: '1'
+      {{- include "schtack.labels" (dict "context" $ ) | nindent 6 }}
   data:
     argo-cd-{{ $dashboardName }}.json: {{ $.Files.Get $path | toJson }}
 {{- end }}
