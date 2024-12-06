@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.2...v0.1.3) (2024-12-06)
+
+
+### Bug Fixes
+
+* shorten namespace prefix to improve readability in the UI ([4755ac1](https://github.com/schrodingers-stack/helm-argo-cd/commit/4755ac1e960ad6efb76950fc9c2ab33df05bc540))
+
 ## [0.1.2](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.1...v0.1.2) (2024-11-29)
 
 
