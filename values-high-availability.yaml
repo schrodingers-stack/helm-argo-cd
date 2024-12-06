@@ -1,0 +1,31 @@
+argo-cd:
+
+  applicationSet:
+    replicas: 2
+
+  controller:
+    replicas: 2
+
+  redis: {}
+
+  redis-ha:
+    enabled: true
+    redis:
+      resources:
+        requests:
+          cpu: 200m
+          memory: 256Mi
+        limits:
+          memory: 512Mi
+
+  repoServer:
+    autoscaling:
+      enabled: true
+      minReplicas: 1
+      maxReplicas: 3
+
+  server:
+    autoscaling:
+      enabled: true
+      minReplicas: 1
+      maxReplicas: 3
