@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.4](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.3...v0.1.4) (2024-12-06)
+
+
+### Features
+
+* add default Schtack labels ([f7a45d2](https://github.com/schrodingers-stack/helm-argo-cd/commit/f7a45d2e014252d444806b0b497067f96f90249f))
+* add new values with resources, ingress and HA configuration ([568bde8](https://github.com/schrodingers-stack/helm-argo-cd/commit/568bde8b860acf4ca2655df3bd4ca6bb5accb086))
+
+
+### Styles
+
+* stylize domain for consistency ([5083465](https://github.com/schrodingers-stack/helm-argo-cd/commit/508346579b9048a1e32b05a14b4dee9cfe0efe3a))
+
 ## [0.1.3](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.2...v0.1.3) (2024-12-06)
 
 
