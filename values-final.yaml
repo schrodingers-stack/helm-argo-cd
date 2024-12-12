@@ -1,14 +1,14 @@
 argo-cd:
   global:
     # Configure the domain for Argo CD. This needs to be overridden with the correct domain by the user of the add-on.
-    domain: argo-cd.schtack-example.cloud
+    domain: argo-cd.example.com
 
   configs:
     cm:
       # Disable the admin user.
       admin.enabled: "false"
       # Define the URL for the Argo CD server.
-      url: https://argo-cd.schtack-example.cloud
+      url: https://argo-cd.example.com
     params:
       # Activate insecure mode because we terminate the SSL connection at the Traefik Ingress Controller by default.
       server.insecure: "true"
@@ -66,14 +66,14 @@ argo-cd:
         cert-manager.io/cluster-issuer: selfsigned-issuer
         traefik.ingress.kubernetes.io/router.entrypoints: websecure
         traefik.ingress.kubernetes.io/router.tls: "true"
-      hostname: argo-cd.schtack-example.cloud
+      hostname: argo-cd.example.com
       extraHosts:
-      - name: argo-cd.cluster-name.schtack-example.cloud
+      - name: argo-cd.cluster-name.example.com
         path:  /
       extraTls:
       - hosts:
-        - argo-cd.schtack-example.cloud
-        - argo-cd.cluster-name.schtack-example.cloud
+        - argo-cd.example.com
+        - argo-cd.cluster-name.example.com
         secretName: argo-cd-ingress-tls
 
 # ------- #
