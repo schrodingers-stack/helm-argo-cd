@@ -1,5 +1,30 @@
 # Changelog
 
+## [0.1.4](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.3...v0.1.4) (2024-12-24)
+
+
+### Features
+
+* add default Schtack labels ([f7a45d2](https://github.com/schrodingers-stack/helm-argo-cd/commit/f7a45d2e014252d444806b0b497067f96f90249f))
+* add new values with resources, ingress and HA configuration ([568bde8](https://github.com/schrodingers-stack/helm-argo-cd/commit/568bde8b860acf4ca2655df3bd4ca6bb5accb086))
+
+
+### Styles
+
+* stylize domain for consistency ([5083465](https://github.com/schrodingers-stack/helm-argo-cd/commit/508346579b9048a1e32b05a14b4dee9cfe0efe3a))
+* use more generic domain ([d35f5d0](https://github.com/schrodingers-stack/helm-argo-cd/commit/d35f5d066d3430cf391946db001686a7e616b656))
+
+
+### Miscellaneous Chores
+
+* **deps:** update helm release argo-cd to v7.7.10 ([#11](https://github.com/schrodingers-stack/helm-argo-cd/issues/11)) ([ee54c6c](https://github.com/schrodingers-stack/helm-argo-cd/commit/ee54c6c46d00ab7ff4a8f40ee9ef0137f4b19e2f))
+* **deps:** update helm release argo-cd to v7.7.11 ([#13](https://github.com/schrodingers-stack/helm-argo-cd/issues/13)) ([0a457cb](https://github.com/schrodingers-stack/helm-argo-cd/commit/0a457cb6712a08bac1ba0d600620b1c6f2f8ce0a))
+
+
+### Continuous Integration
+
+* add config to enable Renovate ([2829f33](https://github.com/schrodingers-stack/helm-argo-cd/commit/2829f33b93b0ab7dfa3be6893bf83e641bf1b25c))
+
 ## [0.1.3](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.2...v0.1.3) (2024-12-06)
 
 
