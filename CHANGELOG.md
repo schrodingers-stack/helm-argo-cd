@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.6...v0.1.7) (2025-01-24)
+
+
+### Miscellaneous Chores
+
+* **deps:** update helm release argo-cd to v7.7.17 ([#18](https://github.com/schrodingers-stack/helm-argo-cd/issues/18)) ([13298ae](https://github.com/schrodingers-stack/helm-argo-cd/commit/13298ae89a95e826d77aa10ae8201ec8dc13cbcd))
+
 ## [0.1.6](https://github.com/schrodingers-stack/helm-argo-cd/compare/v0.1.5...v0.1.6) (2025-01-15)
 
 
