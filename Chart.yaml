@@ -1,6 +1,6 @@
 apiVersion: v2
 name: Argo CD
-version: 0.1.13
+version: 0.1.14
 description: Helm chart to deploy Argo CD using the Schrödinger's Stack
 home: https://schtack.cloud
 dependencies:
